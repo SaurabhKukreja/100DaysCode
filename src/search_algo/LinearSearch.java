@@ -56,7 +56,7 @@ public class LinearSearch {
 
   public static void main(String[] main) {
     int[] arr = new int[] {1,2,3,4,5,6};
-    //searchNumberApproach1(arr, 3, arr.length);
+    searchNumberApproach1(arr, 3, arr.length);
     searchNumberApproach2(arr, 3, arr.length);
   }
 }
