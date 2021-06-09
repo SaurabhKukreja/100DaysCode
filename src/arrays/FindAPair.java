@@ -4,11 +4,6 @@ import java.util.HashSet;
 
 public class FindAPair {
   public static boolean findAPair(int[] arr, int sum) {
-    /*
-    * TimeComplexity - O(n) because we traverse through whole array
-    * Space Complexity - O(n) because we have a new Hashset which may or may not contain n elements
-    *
-    * */
     HashSet<Integer> set = new HashSet<>();
     boolean ifPair = false;
     for(int i = 0 ;i<arr.length;i++) {
@@ -29,5 +24,9 @@ public class FindAPair {
     boolean ifPair = findAPair(arr, sum);
     System.out.println("The Pair exists: "+ ifPair);
   }
-
 }
+/*
+ * TimeComplexity - O(n) because we traverse through whole array
+ * Space Complexity - O(n) because we have a new Hashset which may or may not contain n elements
+ *
+ * */

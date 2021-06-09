@@ -29,6 +29,7 @@ public class ListComparison {
 
     System.out.println("Reranker Candidates After Shuffling: "+rerankerCandidates);
 
+    //Find the missing elements
     rerankerCandidates.removeAll(solrCandidates);
 
     System.out.println("Reranker Candidates after removing all Solr Candidates"+ rerankerCandidates);

@@ -19,7 +19,7 @@ public class LinearSearch {
     System.out.println(num + "found at " + position + "position");
   }
 
-  public static void searchNumberApproach2(int[] arr, int num, int n) {
+  public static void searchNumberApproach2(int[] arr, int key, int n) {
 
     /*
     *
@@ -33,25 +33,22 @@ public class LinearSearch {
     int right = n-1;
     int left = 0;
     int position = -1;
-    int count = 0;
     while(true) {
       if(left > right) {
         break;
       }
-      if(arr[left] == num) {
-        System.out.println("count in left" + count + " " + left);
+      if(arr[left] == key) {
         position = left;
         break;
       }
-      if(arr[right] == num) {
-        System.out.println("count in right" + count + " " + right);
+      if(arr[right] == key) {
         position = right;
         break;
       }
       left++;
       right--;
     }
-    System.out.println(num + "found at " + position + "position");
+    System.out.println(key + "found at " + position + "position");
   }
 
   public static void main(String[] main) {

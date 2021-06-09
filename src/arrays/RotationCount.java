@@ -16,15 +16,6 @@ public class RotationCount {
   }
 
   public static int findRotationCountBinary(int[] arr, int low, int high) {
-    /*
-    * In this we use the concept of Binary Search and try to find the index of minimum element
-    * so we get mid = (low+ high)/2
-    *
-    * We check if mid is the lowest element by comparing it to its neighbouring elements
-    * If it is we return it
-    * or else we use recursive approach to search either in left side of mid or right side of mid.
-    *
-    * */
     if(low > high){
       return -1;
     }
